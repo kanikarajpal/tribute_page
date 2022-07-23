@@ -45,6 +45,7 @@ nav{
 img{
     width: 100%;
     height: 100%;
+   
     display: flex;
     background: linear-gradient(hsl(0, 5%, 19%,0.1),hsl(0, 5%, 19%,0.9));
 }
@@ -58,8 +59,8 @@ i{
     flex-direction: column;
     margin: 5% 8% 10%  8%;
     align-items: center;
-    /* gap:3em; */
     font-size: 50%;
+    gap:3em;
 }
 hr {
     background: linear-gradient(to right,( #bdbaba,0.5), (#1D1E26,0.0));
@@ -70,9 +71,11 @@ h1{
     font-size:200%;
 }
 .desc{
+    display: flex;
     text-align: left;
     justify-content: center;
     flex-direction: row;
+    
 
     
 }
@@ -142,7 +145,12 @@ footer{
         max-width:80%;
         top:35%;
         left:15%;
+        
     }
+    #namaste-img{
+        width:40%;
+    }
+        
     
 }
 @media screen and (max-width: 450px)
@@ -151,10 +159,15 @@ footer{
         
         margin:2% ;
         gap:0;
+        flex-direction: column-reverse;
+        align-items: center;
         
     }
+    .sub-class{
+        flex-direction: column;
+    }
     #namaste-img{
-        top:0;
+       
         width:60%;
     
     }
